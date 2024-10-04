@@ -1,0 +1,38 @@
+{
+  "name": "@repo/eslint-config",
+  "version": "0.0.0",
+  "private": true,
+  "files": [
+    "library.jcs",
+    "next.cjs",
+    "nest.cjs",
+    "react-internal.cjs"
+  ],
+  "devDependencies": {
+    "@eslint-community/eslint-plugin-eslint-comments": "^4.4.0",
+    "@next/eslint-plugin-next": "14.2.13",
+    "@trilon/eslint-plugin": "^0.2.1",
+    "@typescript-eslint/eslint-plugin": "^8.7.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vercel/style-guide": "^6.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-turbo": "^2.1.2",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.30.0",
+    "eslint-plugin-import-helpers": "^1.3.1",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "eslint-plugin-mdx": "^3.1.5",
+    "eslint-plugin-nestjs": "^1.2.3",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.36.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "eslint-plugin-sonarjs": "^2.0.2",
+    "eslint-plugin-testing-library": "^6.3.0",
+    "eslint-plugin-unicorn": "^55.0.0",
+    "eslint-plugin-vitest": "^0.3.26",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,14 @@
+# Node Files 
+node_modules
+npm-debug.log
+npm-debug.log.*
+
+# Build Files
+/build
+/public/build
+/dist
+/reports
+/apps/api/server.ts
+
+# Enviroment Files
+.env

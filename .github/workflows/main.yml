@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    name: 'Build 🧱'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+
+      - name: Setup 👨🏻‍💻
+        uses: ./.github/actions/setup
+
+      - name: Build Application 🧱
+        run: pnpm run build
+
+  lint:
+    name: 'Lint 🐱'
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+
+      - name: Setup 👨🏻‍💻
+        uses: ./.github/actions/setup
+
+      - name: Lint JS files 🐱
+        run: pnpm run lint
+
+  test:
+    name: 'Test 🧪'
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+
+      - name: Setup 👨🏻‍💻
+        uses: ./.github/actions/setup
+
+      - name: Run unit tests 🧪
+        run: pnpm run test

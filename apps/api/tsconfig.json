@@ -1,0 +1,12 @@
+{
+  "extends": "@repo/typescript-config/nestjs.json",
+  "compilerOptions": {
+    "types": ["vitest/globals"],
+    "paths": {
+      "~/*": ["./src/*"]
+    },
+    "outDir": "./dist"
+  },
+  "include": ["src", "@generated", "index.ts"],
+  "exclude": ["node_modules", "dist", "**/node_modules/**"]
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../apps/api/src/config/prisma/index.ts"],"sourcesContent":["export * from './prisma.module'\nexport * from './prisma.service'\n"],"names":[],"mappings":";;;;qBAAc;qBACA"}

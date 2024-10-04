@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../../apps/api/src/thoughts/routers/index.ts"],"sourcesContent":["export * from './thought.router'\n"],"names":[],"mappings":";;;;qBAAc"}

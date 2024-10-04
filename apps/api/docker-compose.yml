@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: development
+    command: pnpm run dev
+    ports:
+      - ${PORT}:${PORT}
+    volumes:
+      - .:/usr/app/src
+      - /usr/app/src/node_modules
