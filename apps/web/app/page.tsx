@@ -24,7 +24,7 @@ async function onSubmit(formData: FormData) {
 }
 
 export default async function Home({ searchParams }: PageProps) {
-  const name = searchParams.name ?? 'world'
+  const { name = 'World' } = await searchParams
 
   const { message } = await unstable_cache(
     () => trpc.app.greeting.query({ name }),
