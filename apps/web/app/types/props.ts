@@ -10,7 +10,7 @@ export type ErrorProps = Readonly<{
 }>
 
 export type PageProps = Readonly<{
-  searchParams: {
+  searchParams: Promise<{
     name?: string
-  }
+  }>
 }>

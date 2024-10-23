@@ -54,6 +54,7 @@ module.exports = {
     'only-warn',
     'eslint-plugin-import-helpers',
     'react-refresh',
+    'react-compiler',
     'sonarjs',
     'testing-library',
     'prettier',
@@ -193,6 +194,7 @@ module.exports = {
         'newlines-between': 'always',
       },
     ],
+    'react-compiler/react-compiler': 'error',
     'react/prop-types': 'off',
     'react-refresh/only-export-components': [
       'warn',

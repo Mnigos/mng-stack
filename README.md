@@ -80,7 +80,7 @@
 
 ### Apps and Packages
 
-Web app uses [`next@15`](https://nextjs.org/blog/next-15-rc) and [`react@19`](https://react.dev/blog/2024/04/25/react-19). If don't want to use rc versions, you are free to downgrade to `next@14` and `react@18`. Also web app uses [T3 Env](https://env.t3.gg) for env variables.
+Web app uses [`next@15`](https://nextjs.org/blog/next-15) and [`react@19`](https://react.dev/blog/2024/04/25/react-19). If don't want to use rc versions, you are free to downgrade to `next@14` and `react@18`. Also web app uses [T3 Env](https://env.t3.gg) for env variables.
 
 Nestjs app is deployed to vercel and that's why `dist` folder is included in source control. If you want to deploy your application to other hosting, you can remove `dist` folder, add it to `.gitignore` and `vercel.json` file.
 
